@@ -93,6 +93,49 @@
             margin-top: 10px;
         }
 
+        /* Detail page banner (used when no project image is available) */
+        .portfolio-detail-banner {
+            position: relative;
+            background: linear-gradient(135deg, #ff7700 0%, #2a1f1a 60%, #1a1a1a 100%);
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 24px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .portfolio-detail-banner::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 25% 25%, rgba(255, 119, 0, 0.28), transparent 65%);
+            pointer-events: none;
+        }
+        .portfolio-detail-banner-title {
+            position: relative;
+            display: block;
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            z-index: 1;
+        }
+        .portfolio-detail-banner-sub {
+            position: relative;
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.85);
+            margin-top: 16px;
+            z-index: 1;
+        }
+
         /* Mobile-only profile photo (the side header is hidden on mobile by the template) */
         .mobile-profile-photo {
             display: none;
