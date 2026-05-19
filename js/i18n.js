@@ -165,6 +165,53 @@
         'portfolio.title': { fr: 'Portfolio', en: 'Portfolio' },
         'portfolio.category': { fr: 'Détaillé', en: 'Detailed' },
 
+        // Portfolio detail pages — shared
+        'pp.description': { fr: 'Description', en: 'Description' },
+        'pp.technology': { fr: 'Technologies', en: 'Technology' },
+
+        // Portfolio 1 — MS INVEST
+        'pp1.title': { fr: 'MS INVEST', en: 'MS INVEST' },
+        'pp1.role': { fr: 'Yassine Ben Abbes', en: 'Yassine Ben Abbes' },
+        'pp1.date': { fr: 'Janv. 2022', en: 'Jan 2022' },
+        'pp1.desc': {
+            fr: "Développement d'une application mobile et d'un site web pour MS INVEST, distributeur officiel de la marque allemande STILL. Solution offrant un service SAV personnalisé et la gestion optimisée des interventions sur les équipements clients, avec remontée terrain temps réel et suivi complet de l'activité. Fonctionnalités :<br /> ✔ Gestion des utilisateurs avec différents niveaux d'accès.<br /> ✔ Gestion des clients et de leur parc d'équipements.<br /> ✔ Gestion des réclamations.<br /> ✔ Planification des interventions en temps réel.<br /> ✔ Gestion des besoins en pièces détachées.<br /> ✔ Organisation des activités via planning.<br /> ✔ Analyses et statistiques de performance.<br /> ✔ Dashboard temps réel des indicateurs clés.<br /> ✔ Notifications utilisateurs et clients.",
+            en: "Development of a mobile application and a website for MS INVEST, the official distributor of the German brand STILL. This solution offers personalized after-sales service and optimized management of interventions on customers' equipment, with real-time field information feedback and comprehensive activity tracking. Features:<br /> ✔ User management with different access levels.<br /> ✔ Customer and equipment park management.<br /> ✔ Complaint management.<br /> ✔ Real-time intervention planning.<br /> ✔ Parts needs management.<br /> ✔ Optimal activity organization via scheduling.<br /> ✔ In-depth performance analysis.<br /> ✔ Real-time KPI tracking through a dashboard.<br /> ✔ User and customer notifications."
+        },
+
+        // Portfolio 2 — SPS Technology
+        'pp2.title': { fr: 'SPS Technology', en: 'SPS Technology' },
+        'pp2.date': { fr: 'Mai 2022', en: 'May 2022' },
+        'pp2.desc': {
+            fr: "Développement d'une application mobile et d'un site web modernes et robustes pour la gestion des stocks, permettant à l'entreprise de suivre ses produits et matériaux en temps réel. Fonctionnalités :<br /><br /> 📈 Dashboard analytique pour une vue complète des stocks.<br /> 👪 Gestion clients et fournisseurs pour optimiser les approvisionnements.<br /> 🔏 Accès multi-utilisateurs sécurisé avec gestion fine des permissions.<br /> 🧾 Gestion des commandes avec affectation des camions de livraison et impression des bons (POS) pour la traçabilité des flux.<br /> ↩️ Gestion des retours pour les produits défectueux ou en surplus.<br /> 🔔 Notifications utilisateurs.",
+            en: "Development of an easy-to-use, robust, and modern mobile application and website for inventory management, designed to help the company track its products and materials in real-time. Features:<br /><br /> 📈 Insight dashboard for a quick and comprehensive overview of stocks.<br /> 👪 Customer and supplier management for better collaboration and optimal supply management.<br /> 🔏 Multi-user access for enhanced security and efficient permission management.<br /> 🧾 Order management with delivery truck assignment and printing of delivery notes (POS) for optimal traceability.<br /> ↩️ Return management for defective or excess stock products.<br /> 🔔 User notifications."
+        },
+
+        // Portfolio 3 — After School
+        'pp3.title': { fr: 'After School — Plateforme E-learning', en: 'After School — E-learning Platform' },
+        'pp3.date': { fr: 'Déc. 2021', en: 'Dec 2021' },
+        'pp3.desc': {
+            fr: "Développement et mise en œuvre d'une plateforme e-learning permettant :<br /> 👪 Gestion des utilisateurs (administrateurs, élèves, enseignants, parents).<br /> 🔏 Gestion fine des privilèges.<br /> 💬 Communication inter-application (messagerie et appels vidéo).<br /> 🧾 Gestion des quiz.<br /> 📅 Réunions en ligne basées sur l'API Zoom.<br /> 🛢 Référentiels : niveaux, créneaux horaires, matières, présences.<br /> 📈 Dashboard.<br /> 🔔 Notifications.<br /> ⚙️ Paramétrage général (nom, logo, coordonnées de l'organisation).",
+            en: "Development and implementation of an e-learning platform that enables:<br /> 👪 User management (administrators, students, teachers, parents).<br /> 🔏 Fine-grained privilege management.<br /> 💬 In-app communication (messaging and video calls).<br /> 🧾 Quiz management.<br /> 📅 Online meetings using Zoom's API.<br /> 🛢 Reference data: levels, time slots, subjects, attendance.<br /> 📈 Dashboard.<br /> 🔔 Notifications.<br /> ⚙️ General settings (name, logo, contact info)."
+        },
+
+        // Portfolio 4 — Digitalent / MIA
+        'pp4.title': { fr: 'Digitalent — Plateforme MIA', en: 'Digitalent — MIA AI Platform' },
+        'pp4.role': { fr: 'Tech Lead — Full Stack & AI', en: 'Tech Lead — Full Stack & AI' },
+        'pp4.period': { fr: 'Sept. 2022 — Déc. 2025', en: 'Sep 2022 — Dec 2025' },
+        'pp4.desc': {
+            fr: "Architecte de la <strong>plateforme MIA</strong> — plateforme IA en microservices dédiée à l'orchestration de workflows structurés, déployée en production pour des grands comptes.<br /><br /> 🧠 <strong>Pipelines RAG</strong> & ingestion de documents : structuration de connaissances en collaboration avec les équipes data science.<br /> 🔗 <strong>Workflows IA multi-étapes</strong> orchestrés en asynchrone via Kafka.<br /> 🧩 Architecture microservices avec APIs REST conçues pour des intégrations LLM (OpenAI et multi-LLM).<br /> 🐍 Stack Python intensive — automation, intégrations, data extraction, glue code.<br /> ☁️ Déploiements production sur AWS (EC2, S3) et on-premise.<br /> 🔁 CI/CD complet via GitHub Actions et Docker.<br /> 📊 Monitoring & observabilité (Grafana) pour les services IA en production.<br /> 🤝 Revue de code et accompagnement technique.<br /><br /> ✨ <strong>Clients majeurs :</strong><br /> ⚡ <strong>Framatome</strong> — robustesse, traçabilité et intégration en environnement haute performance.<br /> 🏦 <strong>Attijariwafa Bank</strong> — services backend sécurisés, gestion des accès JWT, conformité réglementaire.<br /> 🥶 <strong>Picard</strong> — rétrodocumentation SI, analyse de la dette technique, cartographie des dépendances.",
+            en: "Architect of the <strong>MIA platform</strong> — a microservices-based AI platform for structured workflow orchestration, deployed in production for major enterprise clients.<br /><br /> 🧠 <strong>RAG pipelines</strong> & document ingestion: built knowledge structuring layers in collaboration with data science teams.<br /> 🔗 <strong>Multi-step AI workflows</strong> orchestrated asynchronously via Kafka.<br /> 🧩 Microservices architecture with REST APIs designed for LLM integrations (OpenAI and multi-LLM).<br /> 🐍 Python-heavy stack — automation, integrations, data extraction, glue code.<br /> ☁️ Production deployments on AWS (EC2, S3) and on-premise.<br /> 🔁 Full CI/CD with GitHub Actions and Docker.<br /> 📊 Monitoring & observability (Grafana) for production AI services.<br /> 🤝 Code review and technical mentoring.<br /><br /> ✨ <strong>Major client projects:</strong><br /> ⚡ <strong>Framatome</strong> — robustness, traceability and integration in high-performance environments.<br /> 🏦 <strong>Attijariwafa Bank</strong> — secure backend services, JWT-based access management, regulatory compliance.<br /> 🥶 <strong>Picard</strong> — IS retrodocumentation, technical debt analysis and dependency mapping."
+        },
+
+        // Portfolio 5 — Investance / Paradoxe.ai
+        'pp5.title': { fr: 'Investance Partners — Paradoxe.ai', en: 'Investance Partners — Paradoxe.ai' },
+        'pp5.role': { fr: 'Tech Lead Developer', en: 'Tech Lead Developer' },
+        'pp5.period': { fr: 'Janv. 2026 — Présent', en: 'Jan 2026 — Present' },
+        'pp5.desc': {
+            fr: "<strong>Paradoxe.ai</strong> — Plateforme IA en production. Je conçois et déploie le backend qui alimente les agents LLM automatisant des workflows métier complexes.<br /><br /> 🤖 <strong>Orchestration d'agents LLM</strong> avec workflows multi-étapes.<br /> 🔌 <strong>Intégrations MCP</strong> & patterns de <strong>tool calling</strong> pour connecter les agents aux systèmes externes (APIs tierces, BDD, services cloud).<br /> 🛡️ Sécurisation des flux, stabilisation des releases, observabilité pour systèmes IA en production.<br /> 🐍 Backend Python intensif (automation, intégrations, data extraction, glue code).<br /> 🔁 CI/CD GitHub Actions & Docker, déploiement AWS.<br /> 👀 Monitoring, logs, alerting et suivi des performances.<br /> 🤝 Revue de code et accompagnement technique de l'équipe.<br /> 🔄 Transformation des retours internes en fonctionnalités livrées en continu.",
+            en: "<strong>Paradoxe.ai</strong> — Production-grade AI platform. I design and ship the backend powering LLM agents that automate complex business workflows.<br /><br /> 🤖 <strong>LLM agent orchestration</strong> with multi-step workflows.<br /> 🔌 <strong>MCP integrations</strong> & <strong>tool calling</strong> patterns to connect agents to external systems (third-party APIs, databases, cloud services).<br /> 🛡️ Flow security, release stabilization and observability for production AI systems.<br /> 🐍 Python-heavy backend (automation, integrations, data extraction, glue code).<br /> 🔁 CI/CD with GitHub Actions & Docker, AWS deployment.<br /> 👀 Monitoring, logging, alerting and performance tracking.<br /> 🤝 Code review and technical mentoring across the dev team.<br /> 🔄 Converting internal feedback into shippable features on a continuous release cadence."
+        },
+
         // Blog
         'blog.title': { fr: 'Blog', en: 'Blog' },
 
@@ -214,6 +261,26 @@
                 applyLang(btn.getAttribute('data-lang'));
             });
         });
+
+        // Re-apply translations when AJAX-loaded content (portfolio detail pages) is injected.
+        // Debounced so a single page load triggers at most one re-translation.
+        let pending = null;
+        const observer = new MutationObserver(function (mutations) {
+            for (const m of mutations) {
+                for (const n of m.addedNodes) {
+                    if (n.nodeType !== 1) continue;
+                    if (n.querySelector && (n.querySelector('[data-i18n]') || n.matches('[data-i18n]'))) {
+                        if (pending) clearTimeout(pending);
+                        pending = setTimeout(function () {
+                            const current = localStorage.getItem('portfolio_lang') || browser;
+                            applyLang(current);
+                        }, 50);
+                        return;
+                    }
+                }
+            }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
     }
 
     if (document.readyState === 'loading') {
