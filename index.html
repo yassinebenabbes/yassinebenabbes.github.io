@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Yassine Ben Abbes - Portfolio</title>
+    <title>Yassine Ben Abbes - Tech Lead & Software Architect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Yassine Ben Abbes - Web Developer Portfolio">
-    <meta name="keywords" content="web developer, portfolio, Yassine Ben Abbes">
+    <meta name="description" content="Yassine Ben Abbes - Tech Lead & Software Architect | AI Platforms, Microservices, Cloud">
+    <meta name="keywords" content="tech lead, software architect, AI engineer, microservices, Kafka, Python, Yassine Ben Abbes">
     <meta name="author" content="Yassine Ben Abbes">
     <link rel="shortcut icon" href="favicon.ico">
 
@@ -22,6 +22,62 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <script src="js/modernizr.custom.js"></script>
+
+    <style>
+        .lang-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 12px 0 18px;
+        }
+        .lang-switcher button {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.6);
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+        .lang-switcher button:hover {
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        .lang-switcher button.active {
+            color: #fff;
+            border-color: #ff7700;
+            background: rgba(255, 119, 0, 0.15);
+        }
+
+        .ai-intro {
+            margin-bottom: 18px;
+            opacity: 0.85;
+        }
+        .ai-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .ai-tag {
+            display: inline-block;
+            padding: 7px 14px;
+            border: 1px solid rgba(255, 119, 0, 0.45);
+            border-radius: 20px;
+            background: rgba(255, 119, 0, 0.08);
+            color: #ff8a1f;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .ai-tag:hover {
+            background: rgba(255, 119, 0, 0.18);
+            border-color: #ff7700;
+            color: #ffa64d;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,45 +103,50 @@
                     </div>
                     <div class="header-titles">
                         <h2>Yassine Ben Abbes</h2>
-                        <h4>Full Stack Developer & Engineer 👨‍💻 | Technical Lead </h4>
+                        <h4 data-i18n="header.role">Tech Lead &amp; Software Architect</h4>
                     </div>
+                </div>
+
+                <div class="lang-switcher">
+                    <button type="button" data-lang="fr" aria-label="Français">FR</button>
+                    <button type="button" data-lang="en" aria-label="English">EN</button>
                 </div>
 
                 <ul class="main-menu">
                     <li class="active">
                         <a href="#home" class="nav-anim">
                             <span class="menu-icon lnr lnr-home"></span>
-                            <span class="link-text">Home</span>
+                            <span class="link-text" data-i18n="menu.home">Home</span>
                         </a>
                     </li>
                     <li>
                         <a href="#about-me" class="nav-anim">
                             <span class="menu-icon lnr lnr-user"></span>
-                            <span class="link-text">About Me</span>
+                            <span class="link-text" data-i18n="menu.about">About Me</span>
                         </a>
                     </li>
                     <li>
                         <a href="#resume" class="nav-anim">
                             <span class="menu-icon lnr lnr-graduation-hat"></span>
-                            <span class="link-text">Resume</span>
+                            <span class="link-text" data-i18n="menu.resume">Resume</span>
                         </a>
                     </li>
                     <li>
                         <a href="#portfolio" class="nav-anim">
                             <span class="menu-icon lnr lnr-briefcase"></span>
-                            <span class="link-text">Portfolio</span>
+                            <span class="link-text" data-i18n="menu.portfolio">Portfolio</span>
                         </a>
                     </li>
                     <li>
                         <a href="#blog" class="nav-anim">
                             <span class="menu-icon lnr lnr-book"></span>
-                            <span class="link-text">Blog</span>
+                            <span class="link-text" data-i18n="menu.blog">Blog</span>
                         </a>
                     </li>
                     <li>
                         <a href="#contact" class="nav-anim">
                             <span class="menu-icon lnr lnr-envelope"></span>
-                            <span class="link-text">Contact</span>
+                            <span class="link-text" data-i18n="menu.contact">Contact</span>
                         </a>
                     </li>
                 </ul>
@@ -98,11 +159,11 @@
                 </div>
 
                 <div class="header-buttons">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="menu.contactBtn">Contact Me</a>
                 </div>
 
-                <div class="copyrights">
-                    &copy; 2023 All rights reserved. Yassine Ben Abbes.
+                <div class="copyrights" data-i18n="header.copyright">
+                    &copy; 2026 All rights reserved. Yassine Ben Abbes.
                 </div>
             </header>
 
@@ -138,13 +199,13 @@
                                         <h1>Yassine Ben Abbes</h1>
                                         <div class="owl-carousel text-rotation">
                                             <div class="item">
-                                                <div class="sp-subtitle">Software Developer</div>
+                                                <div class="sp-subtitle" data-i18n="home.role1">Tech Lead</div>
                                             </div>
                                             <div class="item">
-                                                <div class="sp-subtitle">Frontend Developer</div>
+                                                <div class="sp-subtitle" data-i18n="home.role2">Software Architect</div>
                                             </div>
                                             <div class="item">
-                                                <div class="sp-subtitle">Backend Developer</div>
+                                                <div class="sp-subtitle" data-i18n="home.role3">AI / Backend Engineer</div>
                                             </div>
                                         </div>
                                     </div>
@@ -157,38 +218,31 @@
                     <!-- About Me Subpage -->
                     <section data-id="about-me" class="animated-section">
                         <div class="page-title">
-                            <h2>About <span>Me</span></h2>
+                            <h2 data-i18n="about.title">About <span>Me</span></h2>
                         </div>
 
                         <div class="section-content">
                             <!-- Personal Information -->
                             <div class="row">
                                 <div class="col-xs-12 col-sm-7">
-                                    <p>Welcome to my portfolio website! I'm Yassine, a passionate and dedicated software developer with 5 years of experience. I have a deep love for coding and a strong desire to create innovative solutions that make a positive
-                                        impact on people's lives.</p>
+                                    <p data-i18n="about.bio">Tech Lead and Software Architect with over 5 years of experience, I design and integrate complex application solutions within AI platforms. Working closely with data science teams, I develop backend services, orchestrate AI workflows through Kafka and structure microservices architectures. I master cloud deployment, CI/CD pipelines and API security.</p>
                                 </div>
 
                                 <div class="col-xs-12 col-sm-5">
                                     <div class="info-list">
                                         <ul>
                                             <li>
-                                                <span class="title">Age</span>
-                                                <span class="value">26</span>
+                                                <span class="title" data-i18n="about.info.residence">Residence</span>
+                                                <span class="value" data-i18n="about.info.residenceValue">France</span>
                                             </li>
 
                                             <li>
-                                                <span class="title">Residence</span>
-                                                <span class="value">France</span>
+                                                <span class="title" data-i18n="about.info.email">Email</span>
+                                                <span class="value">benabbesy41@gmail.com</span>
                                             </li>
 
                                             <li>
-                                                <span class="title">Email</span>
-                                                <!-- Corrected spelling from "e-mail" to "Email" -->
-                                                <span class="value">Benabbesy41@gmail.com</span>
-                                            </li>
-
-                                            <li>
-                                                <span class="title">Phone</span>
+                                                <span class="title" data-i18n="about.info.phone">Phone</span>
                                                 <span class="value">+33 7 48 34 72 83</span>
                                             </li>
                                         </ul>
@@ -203,7 +257,7 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="block-title">
-                                        <h3>What <span>I Do</span></h3>
+                                        <h3 data-i18n="whatido.title">What <span>I Do</span></h3>
                                     </div>
                                 </div>
                             </div>
@@ -217,9 +271,8 @@
                                                     <i class="lnr lnr-screen"></i>
                                                 </div>
                                                 <div class="ci-text">
-                                                    <h4>Full-Stack Development</h4>
-                                                    <p>I specialize in creating end-to-end web applications, seamlessly combining the front-end user interface with a robust and scalable back-end architecture. From designing intuitive user experiences to
-                                                        implementing efficient database management, I ensure a comprehensive solution that meets the needs of both clients and end-users.</p>
+                                                    <h4 data-i18n="whatido.fullstack.title">Full-Stack Development</h4>
+                                                    <p data-i18n="whatido.fullstack.desc">I specialize in creating end-to-end web applications, seamlessly combining the front-end user interface with a robust and scalable back-end architecture. From designing intuitive user experiences to implementing efficient database management, I ensure a comprehensive solution.</p>
                                                 </div>
                                             </div>
                                             <div class="info-block-w-icon">
@@ -227,9 +280,8 @@
                                                     <i class="lnr lnr-code"></i>
                                                 </div>
                                                 <div class="ci-text">
-                                                    <h4>API Development and Integration</h4>
-                                                    <p>I specialize in building robust APIs and integrating them seamlessly with various systems. By designing and implementing APIs, I enable efficient data exchange, integration with third-party services,
-                                                        and the creation of powerful and scalable applications. I pay meticulous attention to security, documentation, and performance optimization to ensure the smooth flow of data between different platforms.</p>
+                                                    <h4 data-i18n="whatido.api.title">API Development and Integration</h4>
+                                                    <p data-i18n="whatido.api.desc">I build robust APIs and integrate them seamlessly with various systems. By designing and implementing APIs, I enable efficient data exchange, integration with third-party services, and scalable applications. I focus on security, documentation, and performance.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,21 +293,20 @@
                                         <div class="info-list-w-icon">
                                             <div class="info-block-w-icon">
                                                 <div class="ci-icon">
-                                                    <i class="lnr lnr-smartphone"></i>
+                                                    <i class="lnr lnr-magic-wand"></i>
                                                 </div>
                                                 <div class="ci-text">
-                                                    <h4>Mobile App Development</h4>
-                                                    <p>With a focus on creating exceptional user experiences, I develop innovative and feature-rich mobile applications for both iOS and Android platforms. Leveraging the latest tools and technologies, I transform
-                                                        ideas into fully functional apps that are intuitive, visually appealing, and optimized for performance.</p>
+                                                    <h4 data-i18n="whatido.ai.title">AI Platforms &amp; Orchestration</h4>
+                                                    <p data-i18n="whatido.ai.desc">I develop and orchestrate AI agents in a microservices architecture, using Kafka for real-time asynchronous processing. I collaborate with data science teams to turn models into reliable and observable backend services.</p>
                                                 </div>
                                             </div>
                                             <div class="info-block-w-icon">
                                                 <div class="ci-icon">
-                                                    <i class="lnr lnr-database"></i>
+                                                    <i class="lnr lnr-cloud"></i>
                                                 </div>
                                                 <div class="ci-text">
-                                                    <h4>Database Management</h4>
-                                                    <p>I design and optimize database architectures, ensuring efficient data storage, retrieval, and management for scalable applications.</p>
+                                                    <h4 data-i18n="whatido.devops.title">DevOps &amp; Cloud</h4>
+                                                    <p data-i18n="whatido.devops.desc">I set up and maintain CI/CD pipelines (GitHub Actions, Docker) with deployment on AWS / Azure. Monitoring, observability and release stabilization in production are core parts of my work.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -263,6 +314,31 @@
                                 </div>
                             </div>
                             <!-- End of Services -->
+
+                            <div class="white-space-50"></div>
+
+                            <!-- AI Engineering Core Expertise -->
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="block-title">
+                                        <h3 data-i18n="ai.title">AI Engineering — <span>Core Expertise</span></h3>
+                                    </div>
+                                    <p class="ai-intro" data-i18n="ai.intro">Areas where I build and ship production-grade AI systems:</p>
+                                    <div class="ai-tags">
+                                        <span class="ai-tag" data-i18n="ai.tag.agents">LLM Agent Orchestration</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.mcp">MCP Servers &amp; Integrations</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.tools">Tool Calling Patterns</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.rag">RAG Pipelines</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.docs">Document Ingestion</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.knowledge">Knowledge Structuring</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.workflows">Multi-step AI Workflows</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.python">Python: automation, glue code, data extraction</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.production">Production-grade AI Systems</span>
+                                        <span class="ai-tag" data-i18n="ai.tag.llms">OpenAI + Multi-LLM architectures</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of AI Engineering -->
 
                             <div class="white-space-20"></div>
 
@@ -391,7 +467,7 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="block-title">
-                                        <h3>Fun <span>Facts</span></h3>
+                                        <h3 data-i18n="funfacts.title">Fun <span>Facts</span></h3>
                                     </div>
                                 </div>
                             </div>
@@ -400,7 +476,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="fun-fact gray-default">
                                         <i class="lnr lnr-heart"></i>
-                                        <h4>Happy Clients</h4>
+                                        <h4 data-i18n="funfacts.clients">Happy Clients</h4>
                                         <span class="fun-fact-block-value">18</span>
                                         <span class="fun-fact-block-text"></span>
                                     </div>
@@ -409,7 +485,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="fun-fact gray-default">
                                         <i class="lnr lnr-clock"></i>
-                                        <h4>Working Hours</h4>
+                                        <h4 data-i18n="funfacts.hours">Working Hours</h4>
                                         <span class="fun-fact-block-value">8760</span>
                                         <span class="fun-fact-block-text"></span>
                                     </div>
@@ -418,7 +494,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="fun-fact gray-default">
                                         <i class="lnr lnr-cloud-upload"></i>
-                                        <h4>Contributions</h4>
+                                        <h4 data-i18n="funfacts.contrib">Contributions</h4>
                                         <span class="fun-fact-block-value">3045</span>
                                         <span class="fun-fact-block-text"></span>
                                     </div>
@@ -434,7 +510,7 @@
                     <!-- Resume Subpage -->
                     <section data-id="resume" class="animated-section">
                         <div class="page-title">
-                            <h2>Resume</h2>
+                            <h2 data-i18n="resume.title">Resume</h2>
                         </div>
 
                         <div class="section-content">
@@ -443,64 +519,64 @@
                                 <div class="col-xs-12 col-sm-7">
 
                                     <div class="block-title">
-                                        <h3>Education</h3>
+                                        <h3 data-i18n="resume.education">Education</h3>
                                     </div>
                                     <div class="timeline timeline-second-style clearfix">
 
                                         <div class="timeline-item clearfix">
                                             <div class="left-part">
                                                 <h5 class="item-period">2023 - 2024</h5>
-                                                <span class="item-company">Université Toulouse - Jean Jaurès, France</span>
+                                                <span class="item-company" data-i18n="edu.toulouse.school">Université Toulouse - Jean Jaurès, France</span>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-part">
-                                                <h4 class="item-title">Master 2</h4>
-                                                <p>Ingénierie de l'Information Numérique (I2N).</p>
+                                                <h4 class="item-title" data-i18n="edu.toulouse.title">Master 2</h4>
+                                                <p data-i18n="edu.toulouse.desc">Digital Information Engineering (I2N)</p>
                                             </div>
                                         </div>
                                         <div class="timeline-item clearfix">
                                             <div class="left-part">
-                                                <h5 class="item-period">2021</h5>
-                                                <span class="item-company">Nanjing University of Posts and Telecommunications, CHINA</span>
+                                                <h5 class="item-period">2020 - 2021</h5>
+                                                <span class="item-company" data-i18n="edu.nanjing.school">Nanjing University of Posts and Telecommunications, China</span>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-part">
-                                                <h4 class="item-title">Master</h4>
-                                                <p>Computer Science & Technology Research Area Ai-Natural Language Processing</p>
+                                                <h4 class="item-title" data-i18n="edu.nanjing.title">Master 2</h4>
+                                                <p data-i18n="edu.nanjing.desc">Computer Science &amp; Technology - AI / Natural Language Processing</p>
                                             </div>
                                         </div>
 
                                         <div class="timeline-item clearfix">
                                             <div class="left-part">
-                                                <h5 class="item-period">2020</h5>
-                                                <span class="item-company">Mohammed V University in Rabat, Morocco</span>
+                                                <h5 class="item-period">2019 - 2020</h5>
+                                                <span class="item-company" data-i18n="edu.rabat.school">Mohammed V University in Rabat, Morocco</span>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-part">
-                                                <h4 class="item-title">Master 1</h4>
-                                                <p>Intelligent Processing System IPS.</p>
+                                                <h4 class="item-title" data-i18n="edu.rabat.title">Master 1</h4>
+                                                <p data-i18n="edu.rabat.desc">Intelligent Processing System (IPS)</p>
                                             </div>
                                         </div>
                                         <div class="timeline-item clearfix">
                                             <div class="left-part">
-                                                <h5 class="item-period">2019-2020</h5>
-                                                <span class="item-company">Higher School of Technology Sale, Morocco</span>
+                                                <h5 class="item-period">2018 - 2019</h5>
+                                                <span class="item-company" data-i18n="edu.est.school">Higher School of Technology Sale, Morocco</span>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-part">
-                                                <h4 class="item-title">Bachelor</h4>
-                                                <p>Information System and Big data.</p>
+                                                <h4 class="item-title" data-i18n="edu.est.title">Bachelor</h4>
+                                                <p data-i18n="edu.est.desc">Information System and Big Data</p>
                                             </div>
                                         </div>
                                         <div class="timeline-item clearfix">
                                             <div class="left-part">
-                                                <h5 class="item-period">2017-2029</h5>
-                                                <span class="item-company">Technical High School Settat, Morocco</span>
+                                                <h5 class="item-period">2017 - 2019</h5>
+                                                <span class="item-company" data-i18n="edu.settat.school">Technical High School Settat, Morocco</span>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-part">
-                                                <h4 class="item-title">Advanced Technician's Certificate</h4>
-                                                <p>Information Systems Development</p>
+                                                <h4 class="item-title" data-i18n="edu.settat.title">Advanced Technician's Certificate</h4>
+                                                <p data-i18n="edu.settat.desc">Information Systems Development</p>
                                             </div>
                                         </div>
                                     </div>
@@ -509,60 +585,67 @@
                                     <div class="white-space-50"></div>
 
                                     <div class="block-title">
-                                        <h3>Experience</h3>
+                                        <h3 data-i18n="resume.experience">Experience</h3>
                                     </div>
 
                                     <div class="timeline timeline-second-style clearfix">
                                         <div class="timeline-item clearfix">
                                             <div class="left-part">
-                                                <h5 class="item-period">September 2022</h5>
-                                                <span class="item-company">Digitalent</span>
+                                                <h5 class="item-period" data-i18n="exp.investance.period">Jan 2026 - Present</h5>
+                                                <span class="item-company" data-i18n="exp.investance.company">Investance Partners</span>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-part">
-                                                <h4 class="item-title">Full Stack Developer</h4>
-                                                <p>Implementation of a Web Interface Architecture. Involved in the design of new features and the continuous improvement of the platform. Developing the back-end part & front-end part to visualize the results
-                                                    of the solutions developed on the platform (graphs and result renderings). Development skills using technologies like #Python #Flask #NuxtJS and #Devops.</p>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item clearfix">
-                                            <div class="left-part">
-                                                <h5 class="item-period">May 2022 - Jun 2022</h5>
-                                                <span class="item-company">SPS Technology, Freelance</span>
-                                            </div>
-                                            <div class="divider"></div>
-                                            <div class="right-part">
-                                                <h4 class="item-title">Full Stack Developer</h4>
-                                                <p>Development of an Easy-to-Use, Robust, and Modern Inventory Management Mobile Application and Website. <br> Development skills using technologies like #Flutter #Laravel Lumen #Vue.js.
-                                                </p>
+                                                <h4 class="item-title" data-i18n="exp.investance.title">Tech Lead Developer</h4>
+                                                <p data-i18n="exp.investance.desc"><strong>Paradoxe.ai</strong> — AI platform. Development and evolution of AI agents with integration of external connectors (third-party APIs, databases, cloud services). Flow security, release stabilization, CI/CD pipelines (GitHub Actions, Docker), AWS deployment. Code review, monitoring and observability of production services.</p>
                                             </div>
                                         </div>
 
                                         <div class="timeline-item clearfix">
                                             <div class="left-part">
-                                                <h5 class="item-period">Jan 2022 - Apr 2022</h5>
-                                                <span class="item-company">MS INVEST (STILL MAROC), Freelance</span>
+                                                <h5 class="item-period" data-i18n="exp.digitalent.period">Sep 2022 - Dec 2025</h5>
+                                                <span class="item-company" data-i18n="exp.digitalent.company">Digitalent</span>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-part">
-                                                <h4 class="item-title">Full Stack Developer</h4>
-                                                <p>Development of a Mobile Application and Website for MS INVEST, Official Distributor of the German Brand STILL. This Solution Provides Personalized After-Sales Service
-                                                    <br> Development skills using technologies like #Flutter #Laravel Lumen #Vue.js.
-                                                </p>
+                                                <h4 class="item-title" data-i18n="exp.digitalent.title">Full Stack Developer</h4>
+                                                <p data-i18n="exp.digitalent.desc">Development of the <strong>MIA</strong> platform, a microservices-based AI platform for processing orchestration. Design of REST APIs in collaboration with data science teams. Asynchronous orchestration of AI agents via Kafka. Docker containerization, CI/CD GitHub Actions, AWS deployment. Major client projects: <strong>Framatome, Attijariwafa Bank, Picard</strong>.</p>
                                             </div>
                                         </div>
 
                                         <div class="timeline-item clearfix">
                                             <div class="left-part">
-                                                <h5 class="item-period">Dec 2021 - Feb 2022</h5>
-                                                <span class="item-company">After school, Freelance</span>
+                                                <h5 class="item-period" data-i18n="exp.sps.period">May 2022 - Jun 2022</h5>
+                                                <span class="item-company" data-i18n="exp.sps.company">SPS Technology, Freelance</span>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-part">
-                                                <h4 class="item-title">Web Developer</h4>
-                                                <p>Development and Implementation of an e-Learning Platform
-                                                    <br> Development skills using technologies like #Laravel #Vue.js.
-                                                </p>
+                                                <h4 class="item-title" data-i18n="exp.sps.title">Full Stack Developer</h4>
+                                                <p data-i18n="exp.sps.desc">Design and development of a multi-user inventory management solution (logistics flow tracking, orders and returns). Stack: #Flutter #Laravel Lumen #Vue.js.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item clearfix">
+                                            <div class="left-part">
+                                                <h5 class="item-period" data-i18n="exp.msinvest.period">Jan 2022 - Apr 2022</h5>
+                                                <span class="item-company" data-i18n="exp.msinvest.company">MS INVEST (STILL MAROC), Freelance</span>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="right-part">
+                                                <h4 class="item-title" data-i18n="exp.msinvest.title">Full Stack Developer</h4>
+                                                <p data-i18n="exp.msinvest.desc">Web and mobile after-sales service management application for MS INVEST, official distributor of the German brand STILL. Intervention tracking, spare parts, analytical dashboard. Stack: #Flutter #Laravel Lumen #Vue.js.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item clearfix">
+                                            <div class="left-part">
+                                                <h5 class="item-period" data-i18n="exp.afterschool.period">Dec 2021 - Feb 2022</h5>
+                                                <span class="item-company" data-i18n="exp.afterschool.company">After School, Freelance</span>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="right-part">
+                                                <h4 class="item-title" data-i18n="exp.afterschool.title">Web Developer</h4>
+                                                <p data-i18n="exp.afterschool.desc">Multi-profile e-learning platform (students, teachers, parents, administrators). Educational management modules, Zoom virtual classes, quizzes, attendance tracking. Stack: #Laravel #Vue.js.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -573,7 +656,7 @@
                                 <div class="col-xs-12 col-sm-5">
                                     <!-- Design Skills -->
                                     <div class="block-title">
-                                        <h3>Programming <span>Languages</span></h3>
+                                        <h3 data-i18n="skills.prog">Programming <span>Languages</span></h3>
                                     </div>
 
                                     <div class="skills-info skills-second-style">
@@ -630,7 +713,7 @@
 
                                     <!-- Coding Skills -->
                                     <div class="block-title">
-                                        <h3>Web <span>Development</span></h3>
+                                        <h3 data-i18n="skills.web">Web <span>Development</span></h3>
                                     </div>
 
                                     <div class="skills-info skills-second-style">
@@ -646,7 +729,7 @@
 
                                         <!-- Skill 6 -->
                                         <div class="skill clearfix">
-                                            <h4>JavaScript frameworks (VUE.JS)</h4>
+                                            <h4>JavaScript frameworks (Vue.js / Nuxt.js)</h4>
                                             <div class="skill-value">90%</div>
                                         </div>
                                         <div class="skill-container skill-6">
@@ -656,7 +739,7 @@
 
                                         <!-- Skill 7 -->
                                         <div class="skill clearfix">
-                                            <h4>Responsive web design</h4>
+                                            <h4 data-i18n="skills.responsive">Responsive web design</h4>
                                             <div class="skill-value">100%</div>
                                         </div>
                                         <div class="skill-container skill-7">
@@ -685,11 +768,20 @@
 
                                     <!-- Coding Skills -->
                                     <div class="block-title">
-                                        <h3>Backend <span>Development</span></h3>
+                                        <h3 data-i18n="skills.backend">Backend <span>Development</span></h3>
                                     </div>
 
                                     <div class="skills-info skills-second-style">
                                         <!-- Skill 5 -->
+                                        <div class="skill clearfix">
+                                            <h4>Python, Flask</h4>
+                                            <div class="skill-value">92%</div>
+                                        </div>
+                                        <div class="skill-container skill-5">
+                                            <div class="skill-percentage"></div>
+                                        </div>
+                                        <!-- End of Skill 5 -->
+
                                         <div class="skill clearfix">
                                             <h4>PHP, Laravel, Laravel Lumen</h4>
                                             <div class="skill-value">91%</div>
@@ -697,12 +789,11 @@
                                         <div class="skill-container skill-5">
                                             <div class="skill-percentage"></div>
                                         </div>
-                                        <!-- End of Skill 5 -->
 
                                         <!-- Skill 6 -->
                                         <div class="skill clearfix">
-                                            <h4>Node.Js, Express.Js</h4>
-                                            <div class="skill-value">70%</div>
+                                            <h4>Node.js, Express.js</h4>
+                                            <div class="skill-value">75%</div>
                                         </div>
                                         <div class="skill-container skill-6">
                                             <div class="skill-percentage"></div>
@@ -711,7 +802,7 @@
 
                                         <!-- Skill 7 -->
                                         <div class="skill clearfix">
-                                            <h4>Database management (SQL, MongoDB)</h4>
+                                            <h4 data-i18n="skills.dbmgmt">Database management (SQL, PostgreSQL, MongoDB)</h4>
                                             <div class="skill-value">85%</div>
                                         </div>
                                         <div class="skill-container skill-5">
@@ -721,7 +812,7 @@
 
                                         <!-- Skill 8 -->
                                         <div class="skill clearfix">
-                                            <h4>API development</h4>
+                                            <h4 data-i18n="skills.apidev">API development</h4>
                                             <div class="skill-value">91%</div>
                                         </div>
                                         <div class="skill-container skill-5">
@@ -731,10 +822,10 @@
 
                                         <!-- Skill 9 -->
                                         <div class="skill clearfix">
-                                            <h4>Kafka (message broker & orchestration)</h4>
-                                            <div class="skill-value">75%</div>
+                                            <h4 data-i18n="skills.kafka">Kafka (message broker &amp; orchestration)</h4>
+                                            <div class="skill-value">85%</div>
                                         </div>
-                                        <div class="skill-container skill-3">
+                                        <div class="skill-container skill-5">
                                             <div class="skill-percentage"></div>
                                         </div>
                                         <!-- End of Skill 9 -->
@@ -746,110 +837,101 @@
 
                                     <!-- Coding Skills -->
                                     <div class="block-title">
-                                        <h3>Mobile App <span>Development</span></h3>
+                                        <h3 data-i18n="skills.mobile">Mobile App <span>Development</span></h3>
                                     </div>
 
                                     <div class="skills-info skills-second-style">
-                                        <!-- Skill 5 -->
                                         <div class="skill clearfix">
-                                            <h4>Cross-platform frameworks (Flutter)</h4>
+                                            <h4 data-i18n="skills.crossplatform">Cross-platform frameworks (Flutter)</h4>
+                                            <div class="skill-value">85%</div>
+                                        </div>
+                                        <div class="skill-container skill-5">
+                                            <div class="skill-percentage"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="white-space-10"></div>
+
+                                    <!-- DevOps Skills -->
+                                    <div class="block-title">
+                                        <h3 data-i18n="skills.devops">Dev <span>Ops &amp; Cloud</span></h3>
+                                    </div>
+
+                                    <div class="skills-info skills-second-style">
+                                        <div class="skill clearfix">
+                                            <h4 data-i18n="skills.cicd">CI/CD (GitHub Actions)</h4>
                                             <div class="skill-value">91%</div>
                                         </div>
                                         <div class="skill-container skill-5">
                                             <div class="skill-percentage"></div>
                                         </div>
-                                        <!-- End of Skill 5 -->
 
-                                        <!-- Skill 6 -->
-
-                                        <!-- End of Skill 6 -->
-
-                                        <!-- Skill 7 -->
-
-                                        <!-- End of Skill 7 -->
-
-                                        <!-- Skill 8 -->
-
-                                        <!-- End of Skill 8 -->
-
-                                        <div class="white-space-10"></div>
-
-                                        <!-- Coding Skills -->
-                                        <div class="block-title">
-                                            <h3>Dev <span>Ops</span></h3>
+                                        <div class="skill clearfix">
+                                            <h4 data-i18n="skills.deploy">Deployment tools (Docker, Git)</h4>
+                                            <div class="skill-value">88%</div>
+                                        </div>
+                                        <div class="skill-container skill-5">
+                                            <div class="skill-percentage"></div>
                                         </div>
 
-                                        <div class="skills-info skills-second-style">
-                                            <!-- Skill 5 -->
-                                            <div class="skill clearfix">
-                                                <h4>Continuous Integration and Continuous Deployment (CI/CD)</h4>
-                                                <div class="skill-value">91%</div>
-                                            </div>
-                                            <div class="skill-container skill-5">
-                                                <div class="skill-percentage"></div>
-                                            </div>
-                                            <!-- End of Skill 5 -->
-
-                                            <!-- Skill 6 -->
-                                            <div class="skill clearfix">
-                                                <h4>Deployment tools (Docker,GIT)</h4>
-                                                <div class="skill-value">85%</div>
-                                            </div>
-                                            <div class="skill-container skill-6">
-                                                <div class="skill-percentage"></div>
-                                            </div>
-                                            <!-- End of Skill 6 -->
-
-                                            <!-- Skill 7 -->
-                                            <div class="skill clearfix">
-                                                <h4>Cloud platforms (AWS)</h4>
-                                                <div class="skill-value">72%</div>
-                                            </div>
-                                            <div class="skill-container skill-3">
-                                                <div class="skill-percentage"></div>
-                                            </div>
-                                            <!-- End of Skill 7 -->
-
-                                            <!-- Skill 8 -->
-
-                                            <!-- End of Skill 8 -->
-
-                                            <!-- Skill 9 -->
-
-                                            <!-- End of Skill 9 -->
+                                        <div class="skill clearfix">
+                                            <h4 data-i18n="skills.cloud">Cloud platforms (AWS, Azure)</h4>
+                                            <div class="skill-value">80%</div>
                                         </div>
-                                        <!-- End of Coding Skills -->
-                                        <!-- Skill 9 -->
+                                        <div class="skill-container skill-5">
+                                            <div class="skill-percentage"></div>
+                                        </div>
 
-                                        <!-- End of Skill 9 -->
+                                        <div class="skill clearfix">
+                                            <h4 data-i18n="skills.monitoring">Monitoring (Grafana)</h4>
+                                            <div class="skill-value">75%</div>
+                                        </div>
+                                        <div class="skill-container skill-3">
+                                            <div class="skill-percentage"></div>
+                                        </div>
                                     </div>
-                                    <!-- End of Coding Skills -->
+                                    <!-- End of DevOps Skills -->
+
+                                    <div class="white-space-10"></div>
+
+                                    <!-- Languages -->
+                                    <div class="block-title">
+                                        <h3 data-i18n="languages.title">Languages</h3>
+                                    </div>
+
+                                    <ul class="knowledges">
+                                        <li data-i18n="languages.fr">French — Native</li>
+                                        <li data-i18n="languages.en">English — Fluent</li>
+                                        <li data-i18n="languages.ar">Arabic — Native</li>
+                                    </ul>
+                                    <!-- End of Languages -->
+
                                     <div class="white-space-10"></div>
 
                                     <!-- Knowledges -->
                                     <div class="block-title">
-                                        <h3>Knowledges</h3>
+                                        <h3 data-i18n="knowledges.title">Knowledges</h3>
                                     </div>
 
                                     <ul class="knowledges">
-                                        <li>Machine Learning</li>
-                                        <li>Project management tools</li>
-                                        <li>Agile methodologies</li>
-                                        <li>Time Management</li>
-                                        <li>Communication</li>
-                                        <li>Problem-Solving</li>
-                                        <li>Social Networking</li>
-                                        <li>Flexibility</li>
+                                        <li data-i18n="kn.ml">Machine Learning</li>
+                                        <li data-i18n="kn.pm">Project management tools</li>
+                                        <li data-i18n="kn.agile">Agile / Scrum methodologies</li>
+                                        <li data-i18n="kn.time">Time Management</li>
+                                        <li data-i18n="kn.comm">Communication</li>
+                                        <li data-i18n="kn.problem">Problem-Solving</li>
+                                        <li data-i18n="kn.social">Social Networking</li>
+                                        <li data-i18n="kn.flex">Flexibility</li>
                                     </ul>
                                     <!-- End of Knowledges -->
                                     <div class="white-space-10"></div>
 
                                     <div class="block-title">
-                                        <h3>Self training</h3>
+                                        <h3 data-i18n="selftraining.title">Self training</h3>
                                     </div>
 
                                     <ul class="knowledges">
-                                        <li>Spring boot</li>
+                                        <li>Spring Boot</li>
                                         <li>Angular</li>
                                     </ul>
                                 </div>
@@ -863,7 +945,7 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="block-title">
-                                        <h3>Certificates</h3>
+                                        <h3 data-i18n="cert.title">Certificates</h3>
                                     </div>
                                 </div>
                             </div>
@@ -878,10 +960,10 @@
 
                                         <div class="certi-content">
                                             <div class="certi-title">
-                                                <h4>Crash Course on Python</h4>
+                                                <h4 data-i18n="cert.python.title">Crash Course on Python</h4>
                                             </div>
                                             <div class="certi-id">
-                                                <span>Credentiel ID: YN5PATA3BRVS</span>
+                                                <span data-i18n="cert.python.id">Credential ID: YN5PATA3BRVS</span>
                                             </div>
                                             <div class="certi-date">
                                                 <span>Sep 2022</span>
@@ -903,7 +985,7 @@
 
                                         <div class="certi-content">
                                             <div class="certi-title">
-                                                <h4>Introduction Microsoft Azure</h4>
+                                                <h4 data-i18n="cert.azure.title">Introduction Microsoft Azure</h4>
                                             </div>
                                             <div class="certi-company">
                                                 <span></span>
@@ -921,7 +1003,7 @@
 
                                         <div class="certi-content">
                                             <div class="certi-title">
-                                                <h4>Associate SQL Certificate</h4>
+                                                <h4 data-i18n="cert.sql.title">Associate SQL Certificate</h4>
                                             </div>
                                             <div class="certi-company">
                                                 <span></span>
@@ -939,7 +1021,7 @@
                     <!-- Portfolio Subpage -->
                     <section data-id="portfolio" class="animated-section">
                         <div class="page-title">
-                            <h2>Portfolio</h2>
+                            <h2 data-i18n="portfolio.title">Portfolio</h2>
                         </div>
 
                         <div class="section-content">
@@ -962,7 +1044,7 @@
 
                                                 <i class="far fa-file-alt"></i>
                                                 <h4 class="name">Digitalent</h4>
-                                                <span class="category">Detailed</span>
+                                                <span class="category" data-i18n="portfolio.category">Detailed</span>
                                             </figure>
 
 
@@ -974,7 +1056,7 @@
 
                                                 <i class="far fa-file-alt"></i>
                                                 <h4 class="name">MS INVEST</h4>
-                                                <span class="category">Detailed</span>
+                                                <span class="category" data-i18n="portfolio.category">Detailed</span>
                                             </figure>
 
 
@@ -987,7 +1069,7 @@
 
                                                 <i class="far fa-file-alt"></i>
                                                 <h4 class="name">SPS technology</h4>
-                                                <span class="category">Detailed</span>
+                                                <span class="category" data-i18n="portfolio.category">Detailed</span>
                                             </figure>
 
                                             <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
@@ -998,7 +1080,7 @@
 
                                                 <i class="far fa-file-alt"></i>
                                                 <h4 class="name">After School</h4>
-                                                <span class="category">Detailed</span>
+                                                <span class="category" data-i18n="portfolio.category">Detailed</span>
                                             </figure>
 
 
@@ -1027,7 +1109,7 @@
                     <!-- Blog Subpage -->
                     <section data-id="blog" class="animated-section">
                         <div class="page-title">
-                            <h2>Blog</h2>
+                            <h2 data-i18n="blog.title">Blog</h2>
                         </div>
 
                         <div class="section-content">
@@ -1080,7 +1162,7 @@
                     <!-- Contact Subpage -->
                     <section data-id="contact" class="animated-section">
                         <div class="page-title">
-                            <h2>Contact</h2>
+                            <h2 data-i18n="contact.title">Contact</h2>
                         </div>
 
                         <div class="section-content">
@@ -1090,7 +1172,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="lm-info-block gray-default">
                                         <i class="lnr lnr-map-marker"></i>
-                                        <h4>France</h4>
+                                        <h4 data-i18n="contact.country">France</h4>
                                         <span class="lm-info-block-value"></span>
                                         <span class="lm-info-block-text"></span>
                                     </div>
@@ -1111,7 +1193,7 @@
 
                                     <div class="lm-info-block gray-default">
                                         <i class="lnr lnr-checkmark-circle"></i>
-                                        <h4>Freelance Available</h4>
+                                        <h4 data-i18n="contact.freelance">Freelance Available</h4>
                                         <span class="lm-info-block-value"></span>
                                         <span class="lm-info-block-text"></span>
                                     </div>
@@ -1128,7 +1210,7 @@
                                         </div>
                                     </div>
                                     <div class="block-title">
-                                        <h3>How Can I <span>Help You?</span></h3>
+                                        <h3 data-i18n="contact.help.title">How Can I <span>Help You?</span></h3>
                                     </div>
 
                                     <form action="https://formspree.io/f/mknaljoa" method="post">
@@ -1139,21 +1221,21 @@
                                                 <div class="left-column">
                                                     <div class="form-group form-group-with-icon">
                                                         <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
-                                                        <label>Full Name</label>
+                                                        <label data-i18n="contact.form.name">Full Name</label>
                                                         <div class="form-control-border"></div>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
 
                                                     <div class="form-group form-group-with-icon">
                                                         <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
-                                                        <label>Email Address</label>
+                                                        <label data-i18n="contact.form.email">Email Address</label>
                                                         <div class="form-control-border"></div>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
 
                                                     <div class="form-group form-group-with-icon">
                                                         <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
-                                                        <label>Subject</label>
+                                                        <label data-i18n="contact.form.subject">Subject</label>
                                                         <div class="form-control-border"></div>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
@@ -1161,7 +1243,7 @@
                                                 <div class="right-column">
                                                     <div class="form-group form-group-with-icon">
                                                         <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
-                                                        <label>Message</label>
+                                                        <label data-i18n="contact.form.message">Message</label>
                                                         <div class="form-control-border"></div>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
@@ -1169,7 +1251,7 @@
                                             </div>
 
 
-                                            <input type="submit" value="Send message">
+                                            <input type="submit" value="Send message" data-i18n-value="contact.form.send">
                                         </div>
                                     </form>
                                 </div>
@@ -1199,6 +1281,7 @@
 
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d1832fce969867a","version":"2023.4.0","r":1,"b":1,"token":"94b99c0576dc45bf9d669fb5e9256829","si":100}'
         crossorigin="anonymous"></script>
 
