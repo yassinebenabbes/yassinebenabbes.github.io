@@ -52,6 +52,47 @@
             background: rgba(255, 119, 0, 0.15);
         }
 
+        /* Text-only portfolio cover (used when no project image is available) */
+        .portfolio-item-text {
+            position: relative;
+            background: linear-gradient(135deg, #ff7700 0%, #2a1f1a 60%, #1a1a1a 100%);
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .portfolio-item-text::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 20%, rgba(255, 119, 0, 0.25), transparent 60%);
+            pointer-events: none;
+        }
+        .portfolio-text-cover {
+            position: relative;
+            padding: 24px;
+            color: #fff;
+            z-index: 1;
+        }
+        .portfolio-text-label {
+            display: block;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+        }
+        .portfolio-text-sub {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+
         /* Mobile-only profile photo (the side header is hidden on mobile by the template) */
         .mobile-profile-photo {
             display: none;
@@ -1004,8 +1045,11 @@
                                         <div class="portfolio-grid three-columns">
 
                                             <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                                                <div class="portfolio-item-img">
-                                                    <img src="img/projects/digitalent/digitalent.png" alt="Paradoxe.ai" title="" />
+                                                <div class="portfolio-item-img portfolio-item-text">
+                                                    <div class="portfolio-text-cover">
+                                                        <span class="portfolio-text-label">Paradoxe.ai</span>
+                                                        <span class="portfolio-text-sub">AI Platform · LLM Agents</span>
+                                                    </div>
                                                     <a href="portfolio-5.html" class="ajax-page-load"></a>
                                                 </div>
 
