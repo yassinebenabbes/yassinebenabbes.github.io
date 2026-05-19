@@ -51,6 +51,23 @@
             border-color: #ff7700;
             background: rgba(255, 119, 0, 0.15);
         }
+
+        /* Mobile-only profile photo (the side header is hidden on mobile by the template) */
+        .mobile-profile-photo {
+            display: none;
+        }
+        @media (max-width: 991px) {
+            .mobile-profile-photo {
+                display: block;
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 0 auto 24px;
+                border: 3px solid rgba(255, 119, 0, 0.6);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            }
+        }
     </style>
 </head>
 
@@ -170,6 +187,7 @@
                             <div class="row">
                                 <div class="col-sm-12 col-md-12 col-lg-12">
                                     <div class="title-block">
+                                        <img src="img/profile.jpg" alt="Yassine Ben Abbes" class="mobile-profile-photo">
                                         <h1>Yassine Ben Abbes</h1>
                                         <div class="owl-carousel text-rotation">
                                             <div class="item">
@@ -987,19 +1005,30 @@
 
                                             <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
                                                 <div class="portfolio-item-img">
-                                                    <img src="img/projects/digitalent/digitalent.png" alt="Media Project 2" title="" />
+                                                    <img src="img/projects/digitalent/digitalent.png" alt="Paradoxe.ai" title="" />
+                                                    <a href="portfolio-5.html" class="ajax-page-load"></a>
+                                                </div>
+
+                                                <i class="far fa-file-alt"></i>
+                                                <h4 class="name">Investance — Paradoxe.ai</h4>
+                                                <span class="category" data-i18n="portfolio.category">Detailed</span>
+                                            </figure>
+
+                                            <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                                                <div class="portfolio-item-img">
+                                                    <img src="img/projects/digitalent/digitalent.png" alt="MIA Platform" title="" />
                                                     <a href="portfolio-4.html" class="ajax-page-load"></a>
                                                 </div>
 
                                                 <i class="far fa-file-alt"></i>
-                                                <h4 class="name">Digitalent</h4>
+                                                <h4 class="name">Digitalent — MIA</h4>
                                                 <span class="category" data-i18n="portfolio.category">Detailed</span>
                                             </figure>
 
 
                                             <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
                                                 <div class="portfolio-item-img">
-                                                    <img src="img/projects/msinvest/carousel.png" alt="Media Project 2" title="" />
+                                                    <img src="img/projects/msinvest/carousel.png" alt="MS INVEST" title="" />
                                                     <a href="portfolio-1.html" class="ajax-page-load"></a>
                                                 </div>
 
@@ -1012,18 +1041,18 @@
 
                                             <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
                                                 <div class="portfolio-item-img">
-                                                    <img src="img/projects/spstechno/carousel.png" alt="Media Project 1" title="" />
+                                                    <img src="img/projects/spstechno/carousel.png" alt="SPS Technology" title="" />
                                                     <a href="portfolio-2.html" class="ajax-page-load"></a>
                                                 </div>
 
                                                 <i class="far fa-file-alt"></i>
-                                                <h4 class="name">SPS technology</h4>
+                                                <h4 class="name">SPS Technology</h4>
                                                 <span class="category" data-i18n="portfolio.category">Detailed</span>
                                             </figure>
 
                                             <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
                                                 <div class="portfolio-item-img">
-                                                    <img src="img/projects/after-school/carousel.png" alt="Media Project 1" title="" />
+                                                    <img src="img/projects/after-school/carousel.png" alt="After School" title="" />
                                                     <a href="portfolio-3.html" class="ajax-page-load"></a>
                                                 </div>
 
