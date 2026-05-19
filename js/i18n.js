@@ -53,23 +53,6 @@
             en: "I set up and maintain CI/CD pipelines (GitHub Actions, Docker) with deployment on AWS / Azure. Monitoring, observability and release stabilization in production are core parts of my work."
         },
 
-        // AI Engineering section
-        'ai.title': { fr: 'AI Engineering — <span>Expertise clé</span>', en: 'AI Engineering — <span>Core Expertise</span>' },
-        'ai.intro': {
-            fr: "Domaines sur lesquels je construis et déploie des systèmes IA en production :",
-            en: "Areas where I build and ship production-grade AI systems:"
-        },
-        'ai.tag.agents': { fr: 'Orchestration d\'agents LLM', en: 'LLM Agent Orchestration' },
-        'ai.tag.mcp': { fr: 'MCP Servers & Intégrations', en: 'MCP Servers & Integrations' },
-        'ai.tag.tools': { fr: 'Tool Calling Patterns', en: 'Tool Calling Patterns' },
-        'ai.tag.rag': { fr: 'Pipelines RAG', en: 'RAG Pipelines' },
-        'ai.tag.docs': { fr: 'Document Ingestion', en: 'Document Ingestion' },
-        'ai.tag.knowledge': { fr: 'Knowledge Structuring', en: 'Knowledge Structuring' },
-        'ai.tag.workflows': { fr: 'Workflows IA multi-étapes', en: 'Multi-step AI Workflows' },
-        'ai.tag.python': { fr: 'Python : automation, glue code, data extraction', en: 'Python: automation, glue code, data extraction' },
-        'ai.tag.production': { fr: 'Systèmes IA production-grade', en: 'Production-grade AI Systems' },
-        'ai.tag.llms': { fr: 'OpenAI + architectures multi-LLM', en: 'OpenAI + Multi-LLM architectures' },
-
         // Fun Facts
         'funfacts.title': { fr: '<span>Quelques</span> chiffres', en: 'Fun <span>Facts</span>' },
         'funfacts.clients': { fr: 'Clients satisfaits', en: 'Happy Clients' },
